@@ -1,0 +1,37 @@
+<!--pages/fightroom/fightroom.wxml-->
+<scroll-view class='level' scroll-y="true" scroll-into-view="level_{{u_level}}">
+   <!--等级显示-->
+  <view class='level-li' id="level_{{level}}" wx:if="{{!startFight}}" wx:for="{{userLevel}}" wx:key="level" wx:for-index="level" wx:for-item="level_info"  bindtap='fight' data-hi='{{level}}' >
+    <image class='level_logo' src='{{level_info.level_logo}}'></image>
+    <text class='power'>消耗：{{level_info.power}}体力</text>
+    <text class='scoreduration'>分数：{{level_info.scoreduration}}分</text>
+    <text class='level_need'>升级：{{level_info.level_need}}分</text>
+    <progress class='level_progess' percent="{{level_info.progress}}" active="true" activeColor="rgba(255,246,216,0.8)" stroke-width='15' backgroundColor="rgba(255,255,255,0.2)" />
+
+  </view>
+  <view class='level-li next_level' wx:if="{{!startFight}}"><image class='level_logo' src='{{next_logo}}'></image></view>
+  <view class='lock_logo' style='background:url("{{suo_logo}}");position:relative;top:-200rpx;background-size: 100% 100%;height: 400rpx;z-index:100;width: 100%;' wx:if="{{!startFight}}"></view>
+</scroll-view>
+
+<view class='room_type'  style='{{startFight==false?"height:0;":""}}'>
+  <view class='random_logo'>
+    <image mode='aspectFit' src="https://wxword.yiqianyun.com/static/images/wxpages/wait/randomLeft.png"  style='margin-left:-60%' animation="{{animation2}}" >
+    </image>
+    <image mode='aspectFit' src="https://wxword.yiqianyun.com/static/images/wxpages/wait/randomRight.png" animation="{{animation3}}" style='margin-left:120%;' >
+    </image> 
+  </view> 
+</view>
+<view class='top'>
+  <block>
+    <view class='wait' wx:if="{{startFight}}">
+      <block>
+        <text style='{{tinyN%3==1?"animation: opa1 1.5s":"animation: opa2 1.5s"}}'>等</text>
+        <text style='{{tinyN%3==2?"animation: opa1 1.5s":"animation: opa2 1.5s"}}'>待</text>
+        <text style='{{tinyN%3==0?"animation: opa1 1.5s":"animation: opa2 1.5s"}}'>中</text> 
+      </block>
+    </view>
+  </block>
+</view>
+<view class='fightInfo' animation="{{animation1}}">
+  体力-1
+</view>

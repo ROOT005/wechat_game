@@ -1,0 +1,33 @@
+<view class='body'>
+    <view class='heromes'>
+    <view class='left-head' style='background-image:url({{path}}{{lefthead}})'><image class='lheadpic' style='background-image:url({{lheadpic}});'></image></view>
+      <view class='win-font' style='background-image:url({{path}}{{leftfont}})'></view> 
+     <view class='ko' style='background-image:url({{path}}{{kopic}}); margin-left: {{koleft}}%;  width:{{kowidth}}px;'></view>  
+       <view class='right-head' style='background-image:url({{path}}{{righthead}})'><image class='rheadpic'  style='background-image:url({{rheadpic}});'></image></view> 
+     <view class='fail-font' style='background-image:url({{path}}{{rightfont}})'></view>   
+  </view>  
+  <view class='score'>
+    <view class='left-score-pic'  animation="{{animationData}}"   style='background-image:url({{path}}{{leftscorepic}});width:{{leftper}}%;margin-top:{{lefta}}px;'><text class='left-score' style=' margin-top:{{lefttop}}px;'>{{leftscore}}</text></view>
+    <view class='right-score-pic'  animation="{{animationData2}}" style='background-image:url({{path}}{{rightscorepic}});width:{{rightper}}%;margin-top:{{righta}}px;'><text class='right-score' style=' margin-top:{{righttop}}px;'>{{rightscore}}</text></view>
+  </view>
+  <view class='message'>
+    <view class='mes-line'>
+     <view class='average'><text class='average-right-score'>级 别:</text></view>
+     <view class='average'><text class='average-left-score'>{{level_name}}</text></view>
+     <view class='message-line'></view>
+    </view>
+      <view class='mes-line'>
+     <view class='average'><text class='average-right-score'>体 力:</text></view>
+     <view class='average'><text class='average-left-score'>+{{ticket}}</text></view>
+     <view class='message-line'></view>
+    </view>  
+  </view>
+
+   <view class='heromes'>
+    <view class='continue' bindtap='back'></view>
+  </view>
+  <view class='heromes'>
+    <button class='share' bindtap='onShareAppMessage' open-type="share"></button>
+    <text class='share-font'>分享给你的小伙伴吧！</text>
+  </view> 
+</view>

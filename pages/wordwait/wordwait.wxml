@@ -1,0 +1,32 @@
+
+<view class='top'>
+  <view class='left_item'><image src="{{left_head}}" mode='aspectFill'></image></view>
+  <block  wx:if="{{clock === ''}}">
+    <view class='wait'>
+      <block>
+        <text style='{{tinyN%3==1?"animation: opa1 1.5s":"animation: opa2 1.5s"}}'>等</text>
+        <text style='{{tinyN%3==2?"animation: opa1 1.5s":"animation: opa2 1.5s"}}'>待</text>
+        <text style='{{tinyN%3==0?"animation: opa1 1.5s":"animation: opa2 1.5s"}}'>中</text> 
+      </block>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='countDown' wx:if="{{clock>0}}">
+      <text>0{{clock}}</text>
+    </view>
+  </block>
+  <view class='right_item'><image src="{{right_head}}" mode='aspectFill'></image></view>
+</view>
+<view class='choice_room'>
+  <view class='room_type'>
+    <view class='random_logo_coupe'  >
+      <image mode='aspectFit' src="https://wxword.yiqianyun.com/static/images/wxpages/wait/coupeLeft.png" style='margin-left:-300%' animation="{{animation}}">
+      </image>
+      <view class='chessbox'></view>
+       <image mode='aspectFit' src="https://wxword.yiqianyun.com/static/images/wxpages/wait/coupeRight.png" style='margin-left:300%;margin-top:-100px;' animation="{{animation1}}" >
+      </image> 
+    </view>
+    
+  </view>
+
+</view>

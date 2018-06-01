@@ -1,0 +1,138 @@
+page{
+ 
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/gamewait.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.top{
+  margin: 20rpx 0;
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left_item,.right_item{
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+}
+.left_item{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/left-item.png");
+  padding: 30rpx;
+}
+.left_item image, .right_item image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: relative;
+  top: -12rpx;
+}
+.right_item{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/right-item.png");
+  padding: 30rpx;
+}
+
+@keyframes opa1{
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opa2{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.wait{
+  flex-basis: 60%;
+  height: 100%;
+  text-align: center;
+  line-height: 150rpx;
+  font-size: 20px;
+  color: #ec3d00;
+  font-weight: bold;
+}
+.countDown{
+  flex-basis: 60%;
+  height: 100%;
+  text-align: center;
+  line-height: 150rpx;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/count_down.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 30px;
+  color: #ec3d00;
+  font-weight: bold;
+}
+
+.room_type{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:20px;
+}
+
+.random, .friend{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/button_border.png");
+  background-size: 100% 100%;
+  width: 150px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.chessbox{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/wait/coupeCenter.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.random button, .friend button{
+  border: none;
+  font-size: 18px;
+}
+.random_logo{
+  width: 300px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+.random_logo image{
+  width: 100px;
+  height: 110px;
+  float: left;
+}
+.random_logo{
+  width: 280px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+.random_logo_coupe image{
+  width: 100px;
+  height: 110px;
+  float: left;
+}
+.choice_room{
+  position: relative;
+  top: 200rpx;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+button[plain][disabled]{
+  background-color:rgba(0, 0, 0, 0);
+  border:none;
+}

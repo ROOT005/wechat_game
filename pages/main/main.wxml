@@ -1,0 +1,40 @@
+<scroll-view class="section">
+    <view class='ann' wx:if="{{ann_title}}"><view class='anntext' animation="{{ann}}">{{ann_title}}{{ann_content}}</view></view>
+    <view class="contain">
+      <view class="phb">
+        <image  animation="{{animationData}}" mode="aspectFill" src="{{path}}/circle.png" class='circle' style='margin-right:60px;margin-top:50px;'  data-hi="1" bindtap="clickMe"></image>
+        <image  mode="aspectFill" src="{{path}}/ttph.png" class='introfont' style='margin-right:20px;margin-top:30px;'  data-hi="1" bindtap="clickMe"></image>
+      </view>
+    </view>
+    <view class="contain"></view>
+    <view class="contain"></view>
+    <view class="contain"><view class="srdz">
+      
+      <image  animation="{{animationData}}" mode="aspectFill" src="{{path}}/circle.png" class='circle' style='margin-top:50px;'></image>
+      <image  mode="aspectFill" src="{{path}}/srdz.png" class='introfont' style='margin-left:-8px;margin-top:20px;'  open-type='share' ></image>
+      <button class='friendInv' open-type='share'></button>
+    </view>
+    </view>
+    <view class="contain"></view>
+    <view class="contain"><view class="tlhf">
+     <text class='djsfont' >{{clock}}/{{ticket_num}}</text> 
+    <image  animation="{{animationData}}" mode="aspectFill" src="{{path}}/circle.png" class='circle'  data-hi="3" bindtap="getTicket" style='float:left;margin-top:-50px;margin-left:10px;'></image>
+    <image  mode="aspectFill" src="{{path}}/tlhf.png" class='introfont' style='margin-left:-20px;margin-top:10px;'  data-hi="3" bindtap="getTicket"></image>
+    </view></view>
+    <text animation="{{animationData2}}" class='ticket_info' >{{ticket_info}}</text>
+    <view class="contain"><view class="drdz"><image  animation="{{animationData}}" mode="aspectFill" src="{{path}}/circle.png" class='circle'  data-hi="4" bindtap="clickMe"></image>
+    <image  mode="aspectFill" src="{{path}}/drdz.png" class='introfont' style='margin-left:30px;margin-top:10px;'  data-hi="4" bindtap="clickMe"></image>
+    </view></view>
+    <view class="contain"><view class="man"><image  animation="{{animationData}}" mode="aspectFill" src="{{path}}/circle.png" class='circle'  data-hi="5" bindtap="clickMe"></image>
+    <image  mode="aspectFill" src="{{path}}/grzx.png" class='introfont' style='margin-left:-20px;margin-top:30px;'  data-hi="5" bindtap="clickMe"></image>
+    </view></view>
+    <view class="contain"><view class="cunzi"><!-- <image  animation="{{animationData}}" mode="aspectFill" src="{{path}}/circle.png" style='margin-top:80px;' class='circle'  data-hi="6" bindtap="clickMe"></image> -->
+    <!-- <image  mode="aspectFill" src="{{path}}/mall.png" class='introfont' style='margin-right:10px;margin-top:30px;'  data-hi="6" bindtap="clickMe"></image> -->
+    </view></view>
+
+     <!-- <view class='destroy' bindtap="destroy" style="display:{{display}}"> 
+        <view class='tcc' style="display:{{display}}">
+        <image  mode="aspectFill" src="https://wxapp.5fz2.com/static/images/wxpages/index/yqhy.png" class='introfont' style='margin-right:10px;margin-top:30px;'  data-hi="6" bindtap="clickMe"></image>
+      </view>
+    </view>   -->
+</scroll-view>

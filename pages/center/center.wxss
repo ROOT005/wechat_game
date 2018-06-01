@@ -1,0 +1,170 @@
+/* pages/center/center.wxss */
+page{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/center/bg.jpg");
+  background-size: 100% auto;
+}
+.header{
+  height: 130px;
+  width: 100%;
+  float: left;
+  margin-top: 15px;
+}
+.headbg{
+  height: 130px;
+  width: 130px;
+  float: left;
+  display: block;
+  position: relative;
+  left:35%;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/center/headbg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.headpic{
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  float: left;
+  margin-left: 5%;
+  margin-top:5%;
+}
+.center{
+  float: left;
+  margin-left:19%;
+  margin-top: 10%;
+  width: 61%;
+}
+.level{
+  width: 20%;
+  height:200px;
+  float: left;
+  margin-top:20%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.info{
+  width: 70%;
+  height:200px;
+  float: left;
+  margin-left: 3%;
+  margin-top: 20%;
+}
+.fontline{
+  float: right;
+  margin-right:3%;
+  width: 95%;
+  height: 15%;
+  margin-top: 2%;
+  text-align: left;
+  border-bottom:1px solid #cbb293;
+  color: #844b00;
+  font-size: 14px;
+  font-weight: bold;
+}
+.footer{
+  position:fixed;
+  bottom: 10px;
+  width: 100%;
+  margin-top: 40px;
+  color: #fff;
+}
+.return{
+  width: 30%;
+  height: 50px;
+  float: left;
+  margin-left: 10%;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/center/return.png");
+  font-size: 15px;
+  line-height: 30px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.share{
+  width: 30%;
+  font-size: 15px;
+  height: 50px;
+  float: right;
+  margin-right: 10%;
+  line-height: 30px;
+  background: rgba(255, 255, 255, 0);
+  border: 0px solid #fff;
+  color: #fff;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/center/share.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+button[class="share"]::after {
+  border: 0;
+}
+.suggest{
+  width: 25%;
+  float: right;
+  height: 25px;
+  margin-right:2%;
+  font-size: 14px;
+  line-height: 25px;
+  background: url(https://wxword.yiqianyun.com/static/images/wxpages/index/sqbutton.png);
+  background-size: 100%;
+}
+
+
+
+ 
+/*mask*/
+.drawer_screen { 
+ width: 100%; 
+ height: 100%; 
+ position: fixed; 
+ top: 0; 
+ left: 0; 
+ z-index: 1000; 
+ background: #000; 
+ opacity: 0.5; 
+ overflow: hidden; 
+}  
+/*content*/
+.drawer_box { 
+ width: 650rpx; 
+ height:720rpx;
+ overflow: hidden; 
+ position: fixed; 
+ top: 50%; 
+ left: 0; 
+ z-index: 1001; 
+ background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/center/levelbg.jpg");
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ /* background: #FAFAFA;  */
+ margin: -360rpx 50rpx 0 50rpx; 
+ border-radius: 3px; 
+} 
+  
+.drawer_title{ 
+ padding:15px; 
+ font: 20px "microsoft yahei"; 
+ text-align: center; 
+} 
+.drawer_content { 
+ height: 520rpx; 
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ overflow-y: scroll; /*超出父盒子高度可滚动*/
+} 
+.drawer-level{
+  width:174rpx;
+  height:260rpx;
+  padding:10rpx 20rpx;
+}
+
+.circle{
+  width: 25px; 
+  height: 25px;
+  z-index: 800;
+  display: block; 
+  margin:0 auto;
+  margin-top: 28px;
+} 
+  

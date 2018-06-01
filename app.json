@@ -1,0 +1,21 @@
+{
+  "pages": [
+
+    "pages/main/main",
+    "pages/center/center",
+    "pages/message/message",
+    "pages/wordstop/wordstop",
+    "pages/wordwait/wordwait",
+        "pages/fightroom/fightroom",
+    "pages/logs/logs",
+    "pages/auth/auth",
+    "pages/word/word",
+    "pages/rankinglist/rankinglist"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "汉字荣耀",
+    "navigationBarTextStyle": "black"
+  }
+}

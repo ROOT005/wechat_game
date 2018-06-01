@@ -1,0 +1,121 @@
+/* pages/fightroom/fightroom.wxss */
+page{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/fightroom/background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /*overflow-y:hidden;*/  
+}
+
+.level{
+  padding: 300rpx 20rpx 20rpx 20rpx;
+  max-height: 700rpx;
+  width: 95%;
+}
+.level-li{
+  position: relative;
+  margin: 20rpx 0;
+  background-image: url(https://wxword.yiqianyun.com/static/images/wxpages/fightroom/button_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;  
+}
+.level_logo{
+  margin-top: 20rpx;
+  margin-left: 46rpx;
+  width: 180rpx;
+  height: 180rpx;
+}
+.level_progess{
+  position: absolute;
+  right: 40rpx;
+  bottom: 20rpx;
+  width: 300rpx;
+}
+.power, .scoreduration, .level_need{
+  font-size: 14px;
+  position: absolute;
+}
+.power{
+  left: 450rpx;
+  top: 70rpx;
+}
+.scoreduration{
+  left: 450rpx;
+  top: 100rpx;
+}
+.level_need{
+  left: 450rpx;
+  top: 40rpx;
+}
+.room_type{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:20px;
+  overflow-x: hidden;
+}
+.random_logo{
+  width: 300px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+.random_logo image{
+  width: 100px;
+  height: 110px;
+  float: left;
+}
+.random_logo{
+  width: 280px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+.random_logo_coupe image{
+  width: 100px;
+  height: 110px;
+  float: left;
+}
+
+.top{
+  margin: 20rpx 0;
+  max-height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@keyframes opa1{
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opa2{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.wait{
+  height: 100%;
+  text-align: center;
+  line-height: 150rpx;
+  font-size: 20px;
+  color: #ec3d00;
+  font-weight: bold;
+}
+.fightInfo{
+  font-size:28rpx;
+  text-align:center;
+  color:#ec3d00;
+  opacity: 0;
+}
+.next_level{
+  opacity: 0.3;
+}

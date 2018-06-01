@@ -1,0 +1,49 @@
+<view class="top">
+  <view class="imagebg"> 
+    <image class="img" src="{{avatarUrl}}" background-size="cover"></image>  
+  </view> 
+  <text class="nickname">{{nickname}}</text> 
+  <scroll-view class="tab-scoller " scroll-x="true"  scroll-left="{{scrollLength}}">
+    <block wx:for="{{listTab}}" wx:key="code">
+      <view class="tab-view" data-index="{{index}}" id="{{item.code}}" bindtap="reflashData">
+        <text class="tab-text active" wx:if="{{index == curIndex}}">{{item.text}}</text>
+        <text class="tab-text" wx:else>{{item.text}}</text>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="biaotou">
+    <view class="paiming">排名</view>
+    <view class="touxiang">头像</view>
+    <view class="nicheng">昵称</view>
+    <view class="fenshu">分数</view>
+    <view class="dengj">等级</view>
+  </view>
+  <scroll-view scroll-y="true" class="rank-list" bindscrolltolower="reloadNew">
+    <block wx:for="{{ranklist}}" wx:for-index="index" wx:key="{{item}}">
+      <view wx:if="{{item.score != 0}}"> 
+        <view class="rank-list-row">
+          <view class="rank-list-num">{{index+1}}</view> 
+          <view class="rank-list-img">
+            <image wx:if="{{item.avatarurl == ''}}" class="image" src="{{path}}/default.png"></image>
+            <image wx:else="{{item.avatarurl}}" class="image" src="{{item.avatarurl}}" background-size="cover"></image>
+          </view>
+            <view class="rank-list-nickname">{{item.nickname}}</view>  
+            <view class="rank-list-score">{{item.score}}</view> 
+          <view class="rank-list-level">
+            <image class="level" src="{{item.newimg}}" background-size="cover"></image> 
+          </view>
+        </view>
+      </view>
+    </block>  
+  </scroll-view>
+  <view class="dengji">
+    <view class="current-level">
+      当前游戏等级: 
+      <text bindtap="bindViewLevel" class="current-level-value">{{level}}</text>
+    </view>
+  </view>
+  <view class="con-bottom">
+    <button class="con-share" open-type="share"></button> 
+    <button bindtap="challent" class="con-again"></button>
+  </view>
+</view>

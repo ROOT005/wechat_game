@@ -1,0 +1,10 @@
+<!--pages/message/message.wxml-->
+  <view class='contain'>
+    <textarea bindblur="charChange" class="weui-textarea" name="evaContent" maxlength="500"  placeholder="请填写您的建议(500字以内)" value='{{charvalue}}'/>
+    <radio-group bindchange="radiochange">
+      <label wx:for="{{items}}">
+        <view class='radioselect' ><radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}</view>
+      </label>
+    </radio-group>
+    <button bindtap='submes'>提交</button>
+  </view>

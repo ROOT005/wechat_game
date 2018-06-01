@@ -1,0 +1,172 @@
+/* pages/index/idemo.wxss */
+.section{
+  width: 100%;
+  height: 800px;
+  background-color: #e8e8e8;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/bg.png");
+  background-size: 100% 100%;
+}
+.contain{
+  width: 100%;
+  height: 80px;
+ }
+ 
+.circle{
+  width: 25px; 
+  height: 25px;
+  display: block; 
+  margin:0 auto;
+  margin-top: 25px;
+} 
+.introfont{
+  width: 90px; 
+  height: 25px;
+  display: block; 
+  margin:0 auto;
+  margin-top: 25px;
+}
+.phb{
+  width: 280px;
+  height: 200px;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/house.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  float: right;
+  margin-right: 0;
+}
+.srdz{
+  margin-top:30px;
+  width: 80px;
+  height: 100px;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/tingzi.png");
+  background-size: 100% 100%;
+  float: left;
+  margin-left: 65%;
+}
+.tlhf{
+  width: 80px;
+  height: 80px;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/fisher.png");
+  background-size: 100% 100%;
+  float: left;
+  margin-top: -20px;
+  margin-left: 23%;
+}
+.daojishi{
+  width: 60px;
+  height: 60px;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/fisher.png");
+  background-size: 100% 100%;
+  float: left;
+  margin-left: -50%;
+  margin-top: 10%;
+
+}
+.djsfont{
+  float: left;
+  z-index: 1000;
+  font-size: 12px;
+  margin-top: 65%;
+  margin-left:5%;
+  font-weight: bold;
+  color: #9a0000;
+}
+.ticket_info{
+  float: left;
+  z-index: 1000;
+  font-size: 12px;
+  margin-top: -25%;
+  margin-left: 45%;
+  font-weight: bold;
+  color: #9a0000;
+}
+.drdz{
+  width: 150px;
+  height: 80px;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/boat.png");
+  background-size: 100% 100%;
+  float: left;
+  margin-left: 28%;
+}
+.man{
+  width: 50px;
+  height: 80px;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/man.png");
+  background-size: 100% 100%;
+  float: left;
+  margin-left: 10%;
+}
+.cunzi{
+  width: 130px;
+  height: 140px;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/cunzi.png");
+  background-size: 100% 100%;
+  float: right;
+  margin-right: 0;
+  margin-top:-55px;
+}
+.destroy{
+  width: 100%;
+  height: 800px;
+  background-color: rgba(	169,169,169, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.tcc{
+  position: fixed;
+  top: 35%;
+  left: 32%;
+  width: 180px;
+  height: 115px;
+  color: #FF7F50;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/tbg.png");
+}
+.mstitle{
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+.instruct{
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.into{
+  width: 50%;
+  font-size: 15px;
+  margin: 0 auto;
+  height:30px;
+  line-height:30px;
+  margin-top:15px;
+}
+.hydz{
+  width: 100%;
+  height: 60px;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/hydz.png");
+  background-size: 100%;
+}
+.ann{
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  height: 30px;
+  background: rgba(248,248,255, 0.4);
+  line-height: 30px;
+  font-size: 13px;
+}
+
+.anntext{
+  position: fixed;
+  top:10px;
+  left:100%;
+  width: 2000px;
+}
+/********2018-3-21 by ztf***********/
+.friendInv{
+  position: relative;
+  top: -160rpx;
+  opacity:0;
+  min-height:160rpx;
+}

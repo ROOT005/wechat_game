@@ -1,0 +1,54 @@
+<view class='door' wx:if="{{door_show}}">
+  <view class='leftdoor' animation="{{animationLeft}}">
+    <image src="https://wxword.yiqianyun.com/static/images/wxpages/game/left_door.png"></image>
+  </view>
+  <view class='rightdoor' animation="{{animationRight}}">
+       <image src="https://wxword.yiqianyun.com/static/images/wxpages/game/right_door.png"></image>
+  </view>
+</view>
+<view class='top'>
+  <view class='left_item'>
+    <image src="{{left_head}}" mode='aspectFill'></image>
+  </view>
+  <view  class='countDown' wx:if="{{rea<10&&rea>0}}">
+    <text>0{{rea}}</text>
+  </view>
+  <view class='countDown' wx:if="{{rea>=10}}">
+    <text>{{rea}}</text>
+  </view>
+  <view class='right_item'><image src="{{right_head}}" mode='aspectFill'></image></view>
+</view>
+<view  class='num' >
+  <text>第{{num}}题</text>
+</view>
+<view class='score'>
+   <view class='left-score'>{{myscore_num}}</view>
+   <view class='right-score'>{{otscore_num}}</view>
+</view>
+<view class='content' >
+  <view class='leftsc'>
+     <progress percent='{{myscore}}' activeColor='#d70f19' stroke-width='23' backgroundColor='#86060c' style='color:#fff;' ></progress>
+  </view>
+  <view class='area' wx:for="{{content}}">
+    <view class='code_key'>{{item.name}}</view>
+    <view class='cover' id='{{index}}'>
+      <view class="block" wx:for="{{item.list}}" style='opacity:{{item.opacity}};order:{{item.num}}'>
+      </view>
+    </view>
+  </view>
+  <view class='rightsc'>
+    <progress percent='{{otscore}}' activeColor='#2371ff' backgroundColor='#19397b' stroke-width='23' style='color:#fff;'></progress>
+  </view>
+</view>
+
+<view class='in'>
+  <view class='in_input'>
+    <view class='input_show' wx:for="{{input_content}}" wx:for-item="wordshow" >{{wordshow}}</view>
+  </view>
+</view>
+<view class='keyword'>
+  <view class='word' wx:for-item="word" bindtap='checkWord' data-word="{{word}}" wx:for="{{keyword}}">{{word}}</view>
+  <button size='mini' style='background:#e8b783;color:#fff;' bindtap='calIn'>重新输入</button>
+  <button size='mini' style='background:#e8b783;color:#fff;' bindtap='resetIn'>全部删除</button>
+</view>
+

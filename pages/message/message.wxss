@@ -1,0 +1,36 @@
+/* pages/message/message.wxss */
+page{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/stopbg.jpg");
+  background-size: 100% auto;
+}
+.contain{
+  width: 80%;
+  height: 80px;
+  margin:50px auto;
+  /* border: 1px solid red; */
+}
+textarea{
+border: 1px green solid;
+margin: auto;
+width:100%;
+height: 5em;
+margin-top:5px;
+padding: 3px;
+}
+wx-label{
+  width:50%;
+}
+.radioselect{
+  
+  float: left;
+  width: 45%;
+  margin: 0 5px;
+  margin-top: 20px;
+}
+button{
+  float: left;
+  width: 100%;
+  margin: 10px auto;
+  color: #fff;
+  background-color: #19a358;
+}

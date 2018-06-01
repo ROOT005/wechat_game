@@ -1,0 +1,231 @@
+page {
+   background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/rankinglist/bg.png");
+   background-size:  100%;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.top{
+  margin:0 auto;
+  padding:320rpx 0 50rpx 0;
+  height:770rpx;
+  width:86%;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/rankinglist/rankbg.png");
+  background-size:  100%;
+  background-position: bottom;  
+  background-repeat: no-repeat;
+  position:relative; 
+  overflow:hidden;
+}
+.imagebg{
+  width:150rpx;
+  height:150rpx;
+  margin:0 auto;
+  border-radius: 50%;
+  margin-top:-290rpx;
+  position: relative;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/rankinglist/image.png");
+  background-size:  100%;
+  background-position: bottom;  
+  background-repeat: no-repeat;
+}
+.img{
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  float: left;
+  margin-left: 5%;
+  margin-top:5%;
+}
+.nickname{
+  width:300rpx;
+  height:40rpx;
+  line-height: 40rpx;
+  font-size: 12px;
+  color:#645222;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  margin-top:6rpx;
+  overflow:hidden;
+}
+.tab-scoller {
+  position: relative;
+  top:144rpx;
+  height: 2.7rem; 
+  width:496rpx; 
+  margin:0 auto;
+  white-space: nowrap;
+  display: flex;
+  background:#884914;
+}
+/*取消移动条*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.active {
+  color: #900F00 !important;
+  font-weight: 900;
+}
+.tab-view {
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  height: 2.7rem;
+  width: 5rem; 
+  display: inline-block;
+  position: relative; 
+  line-height: 2.7remm;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/rankinglist/qhbg.png");
+  background-size: 96%;
+  background-position: bottom;      
+  background-repeat: no-repeat; 
+}
+.tab-text {
+  display: block;
+  height: 2.38rem;
+  line-height: 4rem;
+  color: #fff;
+}
+.biaotou, .paiming, .touxiang, .nicheng, .fenshu, .dengj{
+  height:1.5rem;
+  line-height:1.5rem;
+  text-align:center;
+  font-size:12px;
+  color:#6D3708;
+}
+.biaotou{
+  width:460rpx;
+  margin:0 auto;
+  position:relative;
+  top:156rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.paiming{
+  width:16%;
+}
+.touxiang{
+  width:18%;
+}
+.nicheng{
+  width:27%;
+}
+.fenshu{
+  width:23%;
+}
+.dengj{
+  width:16%;
+}
+.rank-list{
+  position: relative;
+  top:160rpx;
+  height:12rem; 
+  width:496rpx;
+  margin:0 auto;
+}
+.rank-list-row{
+  height:18%; 
+  line-height:2.2rem; 
+  display: flex;
+  font-size:12px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color:#83562F;
+  background: #FCF3EA;
+  margin-bottom:12rpx;
+}
+.rank-list-num, .rank-list-img, .rank-list-nickname, .rank-list-score, .rank-list-level{
+  height:2.2rem;
+  overflow: hidden;
+  text-align: center;
+}
+.rank-list-num{
+  width:13.5%;
+  margin-left:20rpx;
+}
+.rank-list-img{
+  width:15.5%;
+  height:2.2rem;
+}
+.image{
+  width:60rpx;
+  height:60rpx;
+  margin:12rpx 0 0 18rpx; 
+  border-radius: 50%;
+}
+.rank-list-nickname{
+  width:25%;
+  margin-left:3%;
+}
+.rank-list-score{
+  width:20%;
+  margin-left:1.5%;  
+}
+.rank-list-level{
+  width:15%;
+  margin-right:18rpx;
+}
+.level{
+  width:60rpx;
+  height:60rpx;
+  margin-top:12rpx; 
+}
+.dengji{
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+  width:496rpx;
+  margin:0 auto;
+  position: relative;
+  top:180rpx;
+}
+.current-level{
+  width:90%;
+  height:2.3rem;
+  line-height:2.3rem;
+  margin:0 auto;
+  text-align:center;
+  font-size:18px;
+  color:#570202; 
+}
+.current-level-value{
+  font-size:26px;
+  font-weight:600;
+  color:#960101;
+}
+.con-bottom{
+  width:540rpx;
+  height:80rpx;
+  margin:0 auto;
+  position: relative;
+  top:230rpx;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  overflow:hidden;
+} 
+.con-share{
+  width:46%;
+  background:url('https://wxword.yiqianyun.com/static/images/wxpages/rankinglist/share.png');
+  background-size:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border:none;
+}
+.con-again{
+  width:46%;
+  background:url('https://wxword.yiqianyun.com/static/images/wxpages/rankinglist/button.png');
+  background-size:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* 去除button原样式 */
+button::after{
+  border:none;
+}

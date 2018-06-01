@@ -1,0 +1,184 @@
+
+.body{
+  width: 100%;
+  height: 600px;
+   background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/index/stopbg.jpg"); 
+}
+.heromes{
+  width: 100%;
+  height: 100px;
+  float: left;
+  margin-top: 10px;
+  /* background: red; */
+}
+.left-head{
+  float: left;
+  margin-left: 2%;
+  width: 80px;
+  height: 80px;
+  background-size: 100% 100%;
+  transform:rotate(-20deg);
+}
+.win-font{
+  float: left;
+  margin-left:1%;
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  background-size: 100% 100%;
+
+}
+.heromes{
+  width: 100%;
+  height: 80px;
+  float: left;
+  margin-top: 10px;
+  /* background: red; */
+}
+.right-head{
+  float: right;
+  margin-right: 2%;
+  width: 80px;
+  height: 80px;
+  background-size: 100% 100%;
+}
+.rheadpic{
+  float: left;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  margin-top: 10%;
+  margin-left: 10%;
+  background-size: 100%;
+}
+.lheadpic{
+  float: left;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  margin-top: 10%;
+  margin-left: 10%;
+  background-size: 100%;
+}
+
+.fail-font{
+  float: right;
+  margin-right: 1%;
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  background-size: 100% 100%;
+}
+ .ko{
+  position: absolute;
+  z-index: 9999;
+  float: left;
+  width: 5%;
+  height: 60px;
+  margin-left: 43%;
+  margin-top: 10px;
+  background-size: 100% 100%;
+} 
+.score{
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+}
+.left-score-pic{
+  float: left;
+  margin-left: 0px;
+  width: 49.9%;
+  height: 100px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-left: -2%;
+}
+.right-score-pic{
+  float: right;
+  margin-right: 0px;
+  width:49.9%;
+  height: 100px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-right: -2%;
+}
+.left-score{
+  font-size: 25px;
+  color: #fff;
+  float: left;
+  margin-left: 10%;
+  
+}
+.right-score{
+  font-size: 25px;
+  color: #fff;
+  float: right;
+  margin-right: 20%;
+
+}
+.message{
+  width: 100%;
+  float: left;
+  margin-top:30px;
+}
+.mes-line{
+  width: 100%;
+  float: left;
+}
+.average{
+  float: left;
+  width: 50%;
+  height: 50px;
+  margin-top: 0px;
+  margin-bottom: -10PX;
+}
+.average-right-score{
+  font-size: 20px;
+  float: right;
+  margin-right: 10%;
+  margin-top:15px;
+  letter-spacing:10px;
+}
+.average-left-score{
+  font-size: 20px;
+  float: left;
+  margin-left: 10%;
+  margin-top:15px;
+  letter-spacing:10px;
+}
+.message-line{
+  float: left;
+  width: 100%;
+  height: 15px;
+  background-image: url(https://wxword.yiqianyun.com/static/images/wxpages/index/line.png);
+  background-size: 100%;
+}
+.continue{
+  width: 60%;
+  height: 80px;
+  background-image: url(https://wxword.yiqianyun.com/static/images/wxpages/index/continue.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left:20%;
+}
+.share{
+  width: 60%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0);
+  background-image: url(https://wxword.yiqianyun.com/static/images/wxpages/index/share.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left:20%;
+}
+button[class="share"]::after {
+  border: 0;
+}
+.share-font{
+  width: 100%;
+  height: 50px;
+  float: left;
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+<view class="header">
+  <view class='headbg'>
+    <image class='headpic' src='{{headpic}}'></image>
+  </view>
+  <button class='suggest' bindtap='suggest'>我有话说</button>
+</view>
+<view class='center'>
+  <view class='level' animation="{{animationData2}}" bindtap='powerDrawer' data-statu="open" style='  background-image: url("{{level_img}}");'>
+     <!-- <view style="border:1px solid red;height:200rpx;z-index: 900;"> 
+      <image animation="{{animationData2}}" class='circle' src="{{path}}/circle.png"></image>
+     </view>  -->
+  </view>
+  <view class='info'>
+    <view class='fontline'>级别：{{level_name}}</view>
+    <view class='fontline'>总场次：{{all_game}}</view>
+    <view class='fontline'>胜率：{{win_per}}%</view>
+    <view class='fontline'>体力：{{ticket}}</view>
+    <view class='fontline'>分数：{{score}}</view>
+    <view class='fontline'>好友排行：{{f_rank}}</view>
+  </view>
+</view>
+<view class='footer'>
+  <view class='return' bindtap='return'>返回主页</view>
+  <button class='share' bindtap='onShareAppMessage' open-type="share">分享游戏</button>
+</view> 
+
+
+<!-- 弹窗显示内容 -->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view> 
+  <!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}"> 
+  <view class="drawer_title">等级</view> 
+  <view class="drawer_content"> 
+    <block wx:for="{{level}}" wx:key="{{item}}">
+      <view class="drawer-level">
+        <view style="width:130rpx;height:130rpx;margin:0 auto;">
+          <image style="width:100%;height:100%;" src="{{item.image}}"></image>
+        </view>
+        <view style="height:60rpx;text-align:center;overflow:hidden;line-height:70rpx;font-size:13px;">{{item.name}}</view>
+        <view style="height:50rpx;text-align:center;overflow:hidden;line-height:50rpx;font-size:13px;">{{item.min_score}}</view>
+      </view>
+    </block> 
+  </view> 
+</view>

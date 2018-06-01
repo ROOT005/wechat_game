@@ -1,0 +1,222 @@
+page{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/game_bg.jpg");
+  background-size: 100% 125%;
+}
+.door{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  perspective: 800px;
+}
+.leftdoor, .rightdoor{
+  flex-basis: 50%;
+}
+.leftdoor image, .rightdoor image{
+  height: 100%;
+}
+
+
+.top{
+  margin: 20rpx 0;
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left_item,.right_item{
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+}
+.left_item{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/left-item.png");
+  padding: 30rpx;
+}
+.left_item image, .right_item image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: relative;
+  top: -12rpx;
+}
+.right_item{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/right-item.png");
+  padding: 30rpx;
+}
+.score{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 20px;
+  justify-content: space-between;
+  padding-bottom: 10rpx;
+}
+.left-score{
+  padding-left: 40rpx;
+  color: #ec3d00;
+}
+.right-score{
+  padding-right: 40rpx;
+  color: #2a537f;
+}
+
+@keyframes opa1{
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+@keyframes opa2{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.content{
+  position: relative;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/content.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450rpx;
+  font-size: 100rpx;
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30rpx;
+}
+.leftsc progress, .rightsc progress{
+  position: relative;
+  top: 254rpx;
+  left: -108rpx;
+  transform: rotate(270deg);
+  width: 268rpx;
+}
+.leftsc, .rightsc{
+  position: relative;
+  width: 50rpx;
+  height: 550rpx;
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.leftsc{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/leftsc.png");
+}
+.rightsc{
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/rightsc.png");
+}
+.area{
+  position: relative;
+  margin: 0 auto;
+  width: 132rpx;
+}
+.code_key{
+  margin: 0 auto;
+  height: 132rpx;
+}
+.cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 132rpx;
+  height: 132rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+}
+.block{
+  flex-basis: 33.3%;
+  height: 44rpx;
+  background-color: #f5d0a2;
+  /*background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/cover.png");*/
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+.opacity-true{
+  opacity: 0;
+}
+
+.countDown{
+  flex-basis: 60%;
+  height: 100%;
+  text-align: center;
+  line-height: 150rpx;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/count_down.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 30px;
+  color: #ec3d00;
+  font-weight: bold;
+}
+
+.num{
+  min-height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-image: url("https://wxword.yiqianyun.com/static/images/wxpages/game/num.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+}
+.num text{
+  text-align: center;
+}
+.in_input{
+  position: relative;
+  margin-top: 10rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.input_show{
+  background: url('https://wxword.yiqianyun.com/static/images/wxpages/game/inbg.png');
+  background-size: 100% 100%;
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 80rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.keyword{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  width: 100%;
+}
+.word{
+  background-color: #e8b783;
+  color: #fff;
+  min-height: 30px;
+  line-height: 30px;
+  margin: 4rpx auto;
+  font-size: 16px;
+  border: 2rpx solid #fff;
+  border-radius: 20%;
+  text-align: center;
+  flex-basis: 11%;
+}
